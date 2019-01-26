@@ -21,4 +21,22 @@ namespace C0732132
 
     }
 
+    class Countryside
+    {
+        
+    }
+
+
+    class Village
+    {
+        Village PreviousVillage;
+        Village NextVillage;
+        String VillageName;
+        bool isAstrildeHere = false;
+        public Village() { }
+
+    }
+
+
+
 }
