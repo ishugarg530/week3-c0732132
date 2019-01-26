@@ -32,9 +32,12 @@ namespace C0732132
         {
            
             Alst = new Village();
+            Alst.VillageName = "Alst";
             Maeland = new Village();
+            Maeland.VillageName = "Maeland";
             Maeland.isAstrildeHere = true;
             schenig = new Village();
+            schenig.VillageName = "schenig";
 
             Alst.NextVillage = Maeland;
             Maeland.NextVillage = schenig;
@@ -42,7 +45,11 @@ namespace C0732132
         }
          public void WalkAround()
         {
-         Village IntialVillage = this.Maeland;
+         Village CurrentVillage = this.Maeland;
+
+            Village NextVillage;
+
+            NextVillage = CurrentVillage.NextVillage;
 
         }
 
