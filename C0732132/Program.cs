@@ -43,19 +43,24 @@ namespace C0732132
             Maeland.NextVillage = schenig;
             schenig.NextVillage = Alst;
         }
-         public void WalkAround()
+         public void FindAstrilde()
+       
         {
          Village CurrentVillage = this.Maeland;
-
+            if (CurrentVillage.isAstrildeHere)
+            {
+                Console.WriteLine("Hugi found Astrilde!!! Celebrations! XOXO");
+                    
+            }
             Village NextVillage;
 
             NextVillage = CurrentVillage.NextVillage;
 
         }
-
+        
     }
 
-
+    
     class Village
     {
         public Village PreviousVillage;
